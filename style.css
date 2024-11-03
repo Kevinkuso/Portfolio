@@ -1,0 +1,359 @@
+/* Google Fonts Link */
+@import url( 'https://fonts.googleapis.com/css?family=Aldrich');
+
+/* * {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family:"Aldrich";
+  background-color:rgb(6, 4, 36);
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-family: "Aldrich";
+  
+}
+.social-media{
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  
+}
+.fa:hover, .fa:active{
+  transition: linear .3s;
+  padding: 5px;
+  text-decoration: none;
+  background: rgb(6, 73, 73);
+  border: solid 1px rgb(17, 245, 245);
+  border-radius: 15px;
+  color: white;
+
+}
+.fa{
+  margin-right: 30px;
+  width: 30px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  float: right;
+  margin-right: 8px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 3px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 5px 13px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  color: rgb(6, 73, 73);
+  transition: linear .3s;
+  font-size: 20px;
+  background: rgb(17, 245, 245);
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+.portfolio-container{
+  padding-left: 30px;
+  margin-top: 100px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.image-container{
+  height: 600px;
+  width: 400px;
+  /* display: inline-block; */
+ 
+}
+.about-me{
+  height: 400px;
+  width: 800px;
+  display: inline-block;
+  color: white;
+  padding-left: 20px;
+  
+}
+img{
+  height:400px;
+  width: 400px;
+  border-radius: 200px;
+  box-sizing: 5px 7px 15px rgba(86, 189, 241, 0.2);
+}
+h1{
+  font-size: 60px;
+  font-weight: 800;
+  
+}
+h2{
+  font-size: 30px;
+  color: rgb(11, 248, 248);
+}
+h3{
+  font-size: 20px;
+  line-height: 30px;
+}
+.contact{
+  padding: 10px 18px;
+  background: rgb(6, 73, 73);
+  color: rgb(17, 245, 245);
+  font-size: 20px;
+  border: none;
+ border-radius: 4px;
+ display: inline-block;
+ margin-right: 40px;
+ cursor: pointer;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+.contact1{
+  padding: 10px 18px;
+  background: rgb(17, 245, 245);
+  color:rgb(6, 73, 73);
+  font-size: 20px;
+  border: none;
+ border-radius: 4px;
+ display: inline-block;
+ margin-right: 40px;
+ cursor: pointer;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+.contact1:hover{
+  color: rgb(17, 245, 245);
+  background:rgb(6, 73, 73);
+  transition: linear .5s;
+}
+.contact:hover{
+  background: rgb(17, 245, 245);
+  color:rgb(6, 73, 73);
+  transition: linear .5s;
+}
+footer{
+  width: 100%;
+  text-align: center;
+  color: rgb(17, 245, 245);
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  label.logo {
+    padding-left: 10px;
+  }
+ 
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  
+
+
+/* Responsive media query code for small screen */
+@media (max-width: 900px) {
+  .checkbtn {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 30px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    background: rgba(27, 34, 41,0.95);
+    top: 80px;
+    left: -200%;
+    text-align: center;
+    transition: .5s ease-in;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 15px;
+    
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    border-bottom: solid 1px rgb(17, 245, 245);
+  }
+  .image-container{
+    height: 600px;
+    width: 300px;
+    display: inline-block;
+   
+  }
+  .about-me{
+    height: 400px;
+    width: 800px;
+    display: inline-block;
+    color: white;
+    padding-left: 20px;
+    
+  }
+  img{
+    object-fit: contain;
+    height:300px;
+    width: 300px;
+    border-radius: 150px;
+    box-sizing: 5px 7px 15px rgba(86, 189, 241, 0.2);
+  }
+  h1{
+    font-size: 40px;
+    font-weight: 800;
+    
+  }
+  h2{
+    font-size: 20px;
+    color: rgb(11, 248, 248);
+  }
+  h3{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .fa{
+    margin-right: 10px;
+  }
+  .contact1{
+    padding: 7px 12px;;
+    font-size:13px;
+  }
+  .contact{
+    padding: 7px 12px;;
+    font-size:13px;
+    margin-right: 20px;
+  }
+
+  
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+@media (max-width: 750px){
+  img{
+    object-fit: contain;
+    height:200px;
+    width: 200px;
+    border-radius: 100px;
+    box-sizing: 5px 7px 15px rgba(86, 189, 241, 0.2);
+}
+.fa{
+  margin-right: 0px;
+}
+.social-media{
+  margin-left: 10px;
+}
+.contact1{
+  padding: 7px 12px;;
+  font-size:13px;
+}
+.contact{
+  padding: 7px 12px;;
+  font-size:13px;
+  margin-right: 10px;
+}
+}
+@media (max-width: 540px){
+  .portfolio-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    padding: 0px;
+  }
+  img{
+    height:200px;
+    width: 200px;
+    border-radius: 100px;
+    box-sizing: 5px 7px 15px rgba(86, 189, 241, 0.2);
+}
+.image-container{
+  height: 250px;
+  width: 200px;
+  text-align: center;
+}
+.fa{
+  margin-right: 0px;
+}
+.social-media{
+  margin-left: 0px;
+}
+.contact1{
+  padding: 9px 13px;;
+  font-size:14px;
+  margin-right: 6px;
+}
+.contact{
+  padding: 9px 13px;;
+  font-size:14px;
+  margin-right: 6px;
+}
+h1{
+  font-size: 30px;
+  font-weight: 800;
+  
+}
+h2{
+  font-size: 20px;
+  color: rgb(11, 248, 248);
+}
+h3{
+  font-size: 13px;
+  line-height: 20px;
+}
+.about-me{
+  padding-left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+}
+nav ul li a {
+  font-size: 15px;
+  border-bottom: solid 1px rgb(17, 245, 245);
+}
